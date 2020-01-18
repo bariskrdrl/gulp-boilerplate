@@ -9,14 +9,34 @@ html(lang="en")
 
         title Title
 
+        // Css 
+        //- General Styles
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/css/uikit.min.css")
+
+        //- Block Styles
         block styles
 
+        //- Custom Styles 
+        link(rel="stylesheet" href="css/theme.css")
+
     body
+        // Header 
         include ../includes/header/header.pug
 
+        // Main
         main
             block content
 
+        // Footer 
         include ../includes/footer/footer.pug
 
+        // Js 
+        //- General Scripts
+        script(src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit.min.js")
+        script(src="https://cdn.jsdelivr.net/npm/uikit@3.2.7/dist/js/uikit-icons.min.js")
+
+        //- Block Scripts
         block scripts
+
+        //- Custom Scripts
+        script(src="js/theme.min.js")
